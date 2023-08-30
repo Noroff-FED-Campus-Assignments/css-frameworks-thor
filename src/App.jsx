@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import "./App.scss";
+import "./App.css";
 import HomePage from "./components/HomePage";
 import Sidebar from "./components/Sidebar";
 
