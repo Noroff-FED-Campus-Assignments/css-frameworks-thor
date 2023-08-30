@@ -1,9 +1,8 @@
-import ExampleLoginForm from "../components/example-login-form";
-
+import LogIn from "../components/login-box";
 function LoginPage() {
   return (
     <>
-      <ExampleLoginForm />
+      <LogIn />
     </>
   );
 }
