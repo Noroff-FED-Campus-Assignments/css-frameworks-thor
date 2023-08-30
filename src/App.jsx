@@ -9,24 +9,9 @@ function App() {
   return (
     <>
       <Sidebar />
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/home">Home</Link>
-            </li>
-            <li>
-              <Link to="/profile">Profile</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link> {/* Correct the link to "login" */}
-            </li>
-          </ul>
-        </nav>
-      </header>
 
       <main>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <h1 className="text-3xl font-bold underline">CodeConnect</h1>
         <HomePage />
       </main>
 
