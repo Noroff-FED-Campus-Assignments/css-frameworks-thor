@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import menuIcon from "../assets/List.svg";
-import { Link } from "@tanstack/react-router"; // Import Link from your router library
+import { Link } from "@tanstack/react-router";
 
 const Sidebar = () => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -24,40 +24,49 @@ const Sidebar = () => {
                     height="40"
                 />
             )}
-
             <div
-                className={`top-0 left-0 w-[35vw] bg-blue-600 p-10 pl-20 text-white fixed h-full z-40 ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "-translate-x-full"
+                className={`bg-gray-800 p-0 text-white fixed h-screen w-[18rem] top-0 transition-transform duration-300 ${showSidebar ? "translate-x-0 " : "-translate-x-[17rem]"
                     }`}
             >
-                <ul>
-                    <li>
-                        <Link
-                            to="/home"
-                            className="text-xl font-semibold text-white block mb-4"
-                        >
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/profile"
-                            className="text-xl font-semibold text-white block mb-4"
-                        >
-                            Profile
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/login"
-                            className="text-xl font-semibold text-white block"
-                        >
-                            Login
-                        </Link>
-                    </li>
-                </ul>
+
+                <div className="p-6">
+                    <h2 className="text-2xl font-semibold mb-4">DevConnect</h2>
+                    <ul>
+                        <li>
+                            <Link
+                                to="/home"
+                                className="text-lg font-semibold text-gray-300 block mb-3 hover:text-white"
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/profile"
+                                className="text-lg font-semibold text-gray-300 block mb-3 hover:text-white"
+                            >
+                                Profile
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/login"
+                                className="text-lg font-semibold text-gray-300 block hover:text-white"
+                            >
+                                Login
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="absolute bottom-6 left-6">
+                    <p className="text-sm text-gray-500">
+                        &copy; 2023 DevConnect. All rights reserved.
+                    </p>
+                </div>
             </div>
         </>
     );
 };
 
 export default Sidebar;
+
