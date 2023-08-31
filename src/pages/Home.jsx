@@ -1,11 +1,11 @@
-import ExampleUsersPosts from "../components/example-users-posts";
+import HomePage from "../components/HomePage";
 
-function HomePage() {
+function Home() {
   return (
     <>
-      <ExampleUsersPosts />
+      <HomePage />
     </>
   );
 }
 
-export default HomePage;
+export default Home;

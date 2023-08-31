@@ -8,6 +8,10 @@ function App() {
   return (
     <>
       <Sidebar />
+
+      <main>
+        {/* NOTE: Outlet is where the pages are rendered */}
+        <Outlet />
       <main>
         {/* NOTE: Outlet is where the pages are rendered */}
         <Outlet/>
