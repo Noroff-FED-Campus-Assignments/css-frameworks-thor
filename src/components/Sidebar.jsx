@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import menuIcon from "../assets/List.svg";
+import { useState } from "react";
+import { ReactComponent as MenuIcon } from "../assets/List.svg";
 import { Link } from "@tanstack/react-router";
 
 const Sidebar = () => {
@@ -15,17 +15,15 @@ const Sidebar = () => {
                     x
                 </button>
             ) : (
-                <img
+                <div
                     onClick={() => setShowSidebar(!showSidebar)}
-                    className="fixed z-30 flex items-center cursor-pointer left-10 top-6"
-                    src={menuIcon}
-                    alt="Menu"
-                    width="40"
-                    height="40"
-                />
+                    className="fixed z-30 flex items-center cursor-pointer left-10 top-6 display-block h-[40px] w-[40px]"
+                >
+                    <MenuIcon className="fill-white w-full h-full" />
+                </div >
             )}
             <div
-                className={`p-0 bg-gray-800 p-0 text-white fixed h-screen w-[18rem] top-0 transition-transform duration-300 ${showSidebar ? "translate-x-0 " : "-translate-x-[17rem]"
+                className={`bg-gray-800 text-white fixed h-screen w-[17rem] top-0 transition-transform duration-300 ${showSidebar ? "translate-x-0 " : "-translate-x-[17rem]"
                     }`}
             >
 
@@ -34,7 +32,7 @@ const Sidebar = () => {
                     <ul>
                         <li>
                             <Link
-                                to="/home"
+                                to="/"
                                 className="text-lg font-semibold text-gray-300 block mb-3 hover:text-white"
                             >
                                 Home
