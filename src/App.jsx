@@ -7,10 +7,12 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <>
-        <Sidebar />
+        {/* <Sidebar /> */}
       <main>
+        <div className="w-3">
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
         <Outlet/>
+        </div>
         
 
       </main>
