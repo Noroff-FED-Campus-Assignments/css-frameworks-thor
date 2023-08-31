@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ReactComponent as MenuIcon } from "../assets/List.svg";
 import { Link } from "@tanstack/react-router";
-
+import menuIcon from "../assets/List.svg";
 const Sidebar = () => {
     const [showSidebar, setShowSidebar] = useState(false);
 
