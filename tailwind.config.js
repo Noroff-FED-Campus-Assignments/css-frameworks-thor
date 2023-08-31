@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         comment: "#09141b",
+        accent: "#297ea6",
       },
     },
   },
