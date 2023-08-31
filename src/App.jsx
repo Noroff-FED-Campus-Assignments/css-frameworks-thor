@@ -1,8 +1,7 @@
 
-import { Link } from "@tanstack/react-router";
-import "./App.css";
-import HomePage from "./components/HomePage";
+import { Outlet, Link } from "@tanstack/react-router";
 import Sidebar from "./components/Sidebar";
+import "./App.css";
 
 
 function App() {
@@ -26,8 +25,13 @@ function App() {
       </header>
 
       <main>
+        <div className="w-3">
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        <HomePage />
+        {/* NOTE: Outlet is where the pages are rendered */}
+        <Outlet/>
+        </div>
+        
+
       </main>
 
       <footer>
