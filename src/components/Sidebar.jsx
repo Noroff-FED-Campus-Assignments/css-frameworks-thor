@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import menuIcon from "../assets/List.svg";
 
 

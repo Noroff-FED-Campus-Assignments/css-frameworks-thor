@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Sidebar />
+      
       <header>
         <nav>
           <ul>
@@ -25,13 +26,8 @@ function App() {
       </header>
 
       <main>
-        <div className="w-3">
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
         {/* NOTE: Outlet is where the pages are rendered */}
         <Outlet/>
-        </div>
-        
-
       </main>
 
       <footer>
