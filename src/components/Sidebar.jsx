@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { ReactComponent as MenuIcon } from "../assets/List.svg";
 import { Link } from "@tanstack/react-router";
@@ -8,17 +9,18 @@ const Sidebar = () => {
         <>
             {showSidebar ? (
                 <button
-                    className="flex text-4xl text-white items-center cursor-pointer fixed left-10 top-6 z-50"
+                    className="flex text-4xl text-white items-center cursor-pointer fixed left-2 top-3 z-50"
                     onClick={() => setShowSidebar(!showSidebar)}
                 >
                     x
                 </button>
+
             ) : (
                 <div
                     onClick={() => setShowSidebar(!showSidebar)}
                     className="fixed z-30 flex items-center cursor-pointer left-10 top-6 display-block h-[40px] w-[40px]"
                 >
-                    <MenuIcon className="fill-white w-full h-full" />
+                    <MenuIcon className="left-0 fill-white w-full h-full" />
                 </div >
             )}
             <div
@@ -27,7 +29,6 @@ const Sidebar = () => {
             >
 
                 <div className="p-6">
-                    <h2 className="text-2xl font-semibold mb-4">DevConnect</h2>
                     <ul>
                         <li>
                             <Link
@@ -55,9 +56,9 @@ const Sidebar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="absolute bottom-6 left-6">
+                <div className="absolute bottom-6 left-2">
                     <p className="text-sm text-gray-500">
-                        &copy; 2023 DevConnect. All rights reserved.
+                        &copy; 2023 CodeConnect. All rights reserved.
                     </p>
                 </div>
             </div>
@@ -66,4 +67,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-
