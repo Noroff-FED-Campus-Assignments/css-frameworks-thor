@@ -1,11 +1,13 @@
-import ExampleUsersPosts from "../components/example-users-posts";
+import HomePage from "../components/HomePage";
 
-function HomePage() {
+function Home() {
   return (
-    <>
-      <ExampleUsersPosts />
-    </>
+    <div className="min-h-screen bg-cover bg-center">
+      <div className="container mx-auto px-4 py-16">
+        <HomePage />
+      </div>
+    </div>
   );
 }
 
-export default HomePage;
+export default Home;
