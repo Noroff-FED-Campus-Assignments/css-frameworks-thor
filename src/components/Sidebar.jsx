@@ -56,7 +56,7 @@ const Sidebar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="absolute bottom-6 left-2">
+                <div className="test1 absolute bottom-6 left-2">
                     <p className="text-sm text-gray-500">
                         &copy; 2023 CodeConnect. All rights reserved.
                     </p>
