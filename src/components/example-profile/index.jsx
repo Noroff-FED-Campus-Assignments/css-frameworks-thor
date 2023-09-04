@@ -37,11 +37,12 @@ function ExampleProfile() {
   console.log("user data >>>>", data);
 
   return (
+    <div className="p-4 space-y-8 mx-2 md:mx-40 lg:mx-50">
     <div className="p-4 space-y-8">
       {/* Profile Image and Mock Details */}
-      <div className="flex items-center border p-4 rounded-lg shadow-md bg-black">
+      <div className="flex items-center justify-center border p-4 rounded-lg shadow-md bg-black">
         {/* Profile Image */}
-        <img src={profileImage} alt="Profile Image" className="w-1/2 h-32 rounded-full" />
+        <img src={profileImage} alt="Profile Image" className="w-20s h-20 rounded-full" />
 
         {/* Mock Details */}
         <div className="w-1/2 text-white pl-8">
@@ -92,6 +93,7 @@ function ExampleProfile() {
           <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Post</button>
         </form>
       </div>
+    </div>
     </div>
   );
 }
