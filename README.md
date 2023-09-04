@@ -11,12 +11,10 @@ This project was bootstrapped with Vite.
 
 ## Resources
 
-<!-- You must replace these links -->
-
 - [Brief](https://fed-vocational-astro-course.vercel.app/en/css-frameworks/ca/ca)
-- [Design](_LINK_TO_FIGMA_)
-- [Production deploy](_LINK_TO_WEBSITE_)
-- [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
+- [Design](https://www.figma.com/file/YUW942rXJoYpFdT53B5eIr/Untitled?type=design&node-id=0%3A1&mode=design&t=QndP9VMFirRAMNEQ-1)
+- [Production deploy](https://cccodeccconnect.netlify.app/)
+- [Deployment CI](https://app.netlify.com/sites/cccodeccconnect/overview)
 
 ## Deployment
 
@@ -27,7 +25,7 @@ YOu can update your deployment pipeling by editing the [vercel.json](https://ver
 
 ## Report
 
-_ADD_YOUR_REPORT_HERE_
+https://docs.google.com/document/d/1WUBbT7-6EyCsbBQtQo7whooDJpuPK8Px/edit?usp=sharing&ouid=112454763624804052608&rtpof=true&sd=true
 
 ## Getting Started
 
@@ -61,16 +59,16 @@ Make sure you go through this checklist before submitting your project to Moodle
 - [x] All pages import the correct JS file.
 - [x] Input fields have the following attributes;
   - [x] Name
-- [ ] All images have an alt tag;
-  - [ x] A name,
-  - [ x] A placeholder,
-  - [ x] A aria-describedby,
-  - [ x] Required
-- [ ] Removed all unused files.
-- [ ] Named all images properly.
+- [x] All images have an alt tag;
+  - [x] A name,
+  - [x] A placeholder,
+  - [x] A aria-describedby,
+  - [x] Required
+- [x] Removed all unused files.
+- [x] Named all images properly.
 - [x] Committed all my code to github.
 - [x] My repo is publically viewable.
-- [ ] I've submitted/ written a report.
+- [x] I've submitted/ written a report.
 - [x] I've removed all todo notes in code.
 - [x] I've removed all console logs in code.
 - [x] Code is formatted correctly.
@@ -100,5 +98,7 @@ Make sure you go through this checklist before submitting your project to Moodle
 
 ## Authors
 
-- _YOURE_NAME_ (@_your_github_username_)
 - Monde Sineke (@S3ak)
+- Ada (@adakeita)
+- Ridwan (@RidwanHM)
+- Alex (@alexvedt)
