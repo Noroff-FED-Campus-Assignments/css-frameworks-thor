@@ -7,7 +7,6 @@ function App() {
     <>
       <Sidebar />
       <main>
-        {/* NOTE: Outlet is where the pages are rendered */}
         <Outlet />
       </main>
 
