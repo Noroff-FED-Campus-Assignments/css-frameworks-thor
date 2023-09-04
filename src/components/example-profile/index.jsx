@@ -37,24 +37,27 @@ function ExampleProfile() {
   console.log("user data >>>>", data);
 
   return (
-    <div className="p-4 space-y-8 mx-2 md:mx-40 lg:mx-50">
+    
+    <div className="p-4 space-y-8 mx-2 md:mx-40 lg:mx-50 pt-16">
+      
+      <h1 className="text-xl font-extrabold mb-4 md:mb-0">CodeConnect</h1>
     <div className="p-4 space-y-8">
-      {/* Profile Image and Mock Details */}
-      <div className="flex items-center justify-center border p-4 rounded-lg shadow-md bg-black">
-        {/* Profile Image */}
+      
+      <div className="flex items-center justify-center border p-4 rounded-lg shadow-md bg-comment">
+        
         <img src={profileImage} alt="Profile Image" className="w-20s h-20 rounded-full" />
 
-        {/* Mock Details */}
+        
         <div className="w-1/2 text-white pl-8">
           <h1 className="text-2xl font-semibold">Johansen</h1>
           <p className="text-gray-300">{userDetails}</p>
         </div>
       </div>
 
-      {/* Contacts List */}
+      
       <div className="space-y-2 text-center">
         <h2 className="text-xl font-semibold text-blue-500">Contacts</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mx-auto border p-4 rounded-lg shadow-md bg-black-100">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mx-auto border p-4 rounded-lg shadow-md bg-comment">
           {mockContacts.map(contact => (
             <li key={contact.id} className="flex items-center justify-center space-x-2">
               <img src={profileImage2} alt="Contact" className="w-12 h-12 rounded-full" />
@@ -64,11 +67,11 @@ function ExampleProfile() {
         </div>
       </div>
 
-      {/* Posts from Contacts */}
+      
       <div className="space-y-4">
         <h2 className="text-xl font-semibold text-blue-500">Posts from Contacts</h2>
         {mockContacts.map(contact => (
-          <div key={contact.id} className="border p-4 rounded-lg shadow-md bg-black">
+          <div key={contact.id} className="border p-4 rounded-lg shadow-md bg-comment">
             <p className="text-white">
               <span className="font-semibold text-blue-500">{contact.name}: </span>
               {contact.post}
@@ -77,7 +80,7 @@ function ExampleProfile() {
         ))}
       </div>
 
-      {/* User Post */}
+      
       <div className="space-y-4">
         <h2 className="text-xl font-semibold text-blue-500">Your Posts</h2>
         <div className="border p-4 rounded-lg shadow-md bg-black">
@@ -85,7 +88,7 @@ function ExampleProfile() {
         </div>
       </div>
 
-      {/* Post Form */}
+      
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-blue-500">Post Something</h2>
         <form className="space-y-2">
