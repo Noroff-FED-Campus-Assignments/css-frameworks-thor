@@ -24,7 +24,7 @@ const Sidebar = () => {
                 </div >
             )}
             <div
-                className={`bg-gray-800 text-white fixed h-screen w-[17rem] top-0 transition-transform duration-300 ${showSidebar ? "translate-x-0 " : "-translate-x-[17rem]"
+                className={`left-0 bg-gray-800 text-white fixed h-screen w-[17rem] top-0 transition-transform duration-300 ${showSidebar ? "translate-x-0 " : "-translate-x-[17rem]"
                     }`}
             >
 
@@ -56,7 +56,7 @@ const Sidebar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="absolute bottom-6 left-2">
+                <div className="test1 absolute bottom-6 left-2">
                     <p className="text-sm text-gray-500">
                         &copy; 2023 CodeConnect. All rights reserved.
                     </p>
