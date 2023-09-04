@@ -10,9 +10,7 @@ function App() {
         {/* NOTE: Outlet is where the pages are rendered */}
         <Outlet />
       </main>
-      {/* <footer>
-        <small>Created with ❤️ by _REPLACE_</small>
-      </footer> */}
+
     </>
   );
 }
