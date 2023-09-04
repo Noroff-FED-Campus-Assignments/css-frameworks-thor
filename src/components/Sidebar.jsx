@@ -24,7 +24,7 @@ const Sidebar = () => {
                 </div >
             )}
             <div
-                className={`bg-gray-800 text-white fixed h-screen w-[17rem] top-0 transition-transform duration-300 ${showSidebar ? "translate-x-0 " : "-translate-x-[17rem]"
+                className={`left-0 bg-gray-800 text-white fixed h-screen w-[17rem] top-0 transition-transform duration-300 ${showSidebar ? "translate-x-0 " : "-translate-x-[17rem]"
                     }`}
             >
 
